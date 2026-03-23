@@ -5,6 +5,29 @@
 
 ## Como rodar o projeto baixado
 
+Baixar os arquivos do GitHub.
+```
+git clone <repositorio_url> .
+```
+```
+git clone https://github.com/celkecursos/lista-aula-curso-react19-typescript.git .
+```
+
+Instalar todas as dependências indicadas pelo package.json.
+```
+npm install
+```
+
+Rodar o projeto React.
+```
+npm run dev
+```
+
+Acessar no navegador a URL.
+```
+http://localhost:3000
+```
+
 ## Sequencia para criar o projeto
 
 Criar o projeto com React e Next.js. O ponto "." indica que deve ser criado no próprio diretório. 
