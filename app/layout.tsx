@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "tainaiz",
-  description: "site sobre tainaiz",
+  title: "site de vendas",
+  description: "site de vendas para a disciplina de desenvolvimento web",
 };
 
 export default function RootLayout({
