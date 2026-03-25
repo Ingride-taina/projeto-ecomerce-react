@@ -17,7 +17,7 @@
   padding: 24px;
   border-radius: 12px;
 
-  background: rgba(224, 213, 213, 0.23);
+  background: rgba(239, 235, 235, 0.23);
   backdrop-filter: blur(7px);
 
   display: flex;
@@ -41,7 +41,10 @@
 input {
   padding: 12px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid rgba(255, 255, 255, 0.5);
+  outline-width: 2px;
+  outline-color: rgba(255, 255, 255, 0.5);
 }
 
 .forgot {
@@ -58,4 +61,8 @@ input {
   background: rgba(90, 160, 185, 0.62);
   color: white;
   cursor: pointer;
+}
+
+.email{
+  color: #F37636;
 }

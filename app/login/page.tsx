@@ -1,5 +1,8 @@
 import Login from "../../src/components/login";
+import "../../src/components/login.css";
 
-export default function Page() {
-  return <Login />;
+ function Page() {
+  return <Login />
 }
+
+export default Login;
