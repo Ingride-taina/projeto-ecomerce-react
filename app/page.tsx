@@ -1,3 +1,7 @@
-export default function Home() {
-  return <h1>Home</h1>;
+import Login from "../src/components/login";
+
+function Home() {
+  return <Login />
 }
+
+export default Login;

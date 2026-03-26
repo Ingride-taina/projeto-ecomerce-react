@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import background from "../assets/background.png";
+import { useRouter } from "next/navigation";
 
 type User = {
   email: string;
@@ -17,6 +18,8 @@ export default function Auth() {
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [message, setMessage] = useState("");
+
+   const router = useRouter();
 
   useEffect(() => {
     setErrors({});
@@ -82,6 +85,8 @@ export default function Auth() {
       }
 
       setMessage("Login realizado com sucesso!");
+       // 🔹 aqui é a parte nova:
+      router.push("/menu"); // vai para a página Menu
     } else {
       const newUser = { email, password };
       localStorage.setItem("users", JSON.stringify([...users, newUser]));
@@ -97,7 +102,7 @@ export default function Auth() {
       backgroundImage: `url(${background.src})`,
     }}
   >
-      <div className="w-[410px] bg-white/0 backdrop-blur-2xl border border-white/20 rounded-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
+      <div className="w-[360px] bg-white/0 backdrop-blur-2xl border border-white/20 rounded-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
         
         <div className="flex mb-8">
           <button

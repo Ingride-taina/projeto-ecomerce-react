@@ -1,5 +1,4 @@
-import TelaCadastro from "../../src/components/telacadastro";
-import "../../src/components/TelaCadastro.css";
+import TelaCadastro from "../../src/components/Cadastro";
 
 function Page() {
     return <TelaCadastro/>

@@ -1,7 +1,6 @@
 import Login from "../../src/components/login";
-import "../../src/components/login.css";
 
- function Page() {
+ function Home() {
   return <Login />
 }
 
